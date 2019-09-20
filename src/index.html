@@ -3,17 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Front End Web 100</title>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 </head>
 
-<body>
+<body class='container-fluid'></body>
+<div class='container'>
     <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+        <div class="row">
+            <h1>Tip Calculator</h1>
+        </div>
     </header>
     <main>
-        
+        <form>
+            <form-group>
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="text"
+                               class="form-control"
+                               aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="btn-group"
+                         role="group"
+                         aria-label="Basic example">
+                        <button type="button"
+                                class="btn btn-secondary">10%</button>
+                        <button type="button"
+                                class="btn btn-secondary">15%</button>
+                        <button type="button"
+                                class="btn btn-secondary">20%</button>
+                    </div>
+                </div>
+                <div class="row"
+                     id="tipEcho">
+                    You are tipping 20%
+                </div>
+                <div class="row">
+                    <input class="form-control"
+                           type="text"
+                           placeholder="Bill Amount:"
+                           readonly>
+                    <input class="form-control"
+                           type="text"
+                           placeholder="Tip Percentage:"
+                           readonly>
+                    <input class="form-control"
+                           type="text"
+                           placeholder="Amount of Tip:"
+                           readonly>
+                    <input class="form-control"
+                           type="text"
+                           id="totalPaid"
+                           placeholder="Total to be Paid:"
+                           readonly>
+                </div>
+            </form-group>
+        </form>
+
     </main>
+</div>
 </body>
 
 </html>

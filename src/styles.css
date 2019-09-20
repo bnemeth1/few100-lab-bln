@@ -1,3 +1,12 @@
 h1 {
-    color:red;
+    color:darkblue;
+}
+
+#totalPaid{
+    font-style:italic;
+    font-weight: bold;
+}
+
+#tipEcho{
+    padding:20px;
 }
